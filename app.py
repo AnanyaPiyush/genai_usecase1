@@ -4,7 +4,7 @@ import openai
 import re
 
 # Set OpenAI API key
-openai.api_key = "DTlH29tJRCWzsbP8QWMvROdtg7CyWkV46Rp3pcgkmcaOvo7OYvFMJQQJ99BKAC77bzfXJ3w3AAABACOGbCdm"
+openai.api_key = "open_api_key"
 
 # Define compliance categories and their priorities
 CATEGORIES = {
@@ -152,4 +152,5 @@ if uploaded_file is not None:
                     st.write(f"- Index {r['index']}: {r['subject']} - {r['category']} (Priority: {r['priority']})")
             else:
                 st.success("No non-compliant emails found.")
+
 
